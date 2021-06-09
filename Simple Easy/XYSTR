@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+typedef pair<int,int> pi;
+int main() {
+     ios::sync_with_stdio(0);
+     cin.tie(0);
+     ll t;
+     cin>>t;
+     while(t--){
+          ll count = 0;
+          string s;
+          cin>>s;
+         ll N = s.length();
+         for(ll i=1; i<N; i++){
+              if(s[i-1] != s[i]){
+              count++;
+              i++;
+              }else continue;       
+         }
+         cout << count << '\n';
+     }
+
+     return 0;
+}

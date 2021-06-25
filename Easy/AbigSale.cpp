@@ -20,7 +20,8 @@ int main(){
              loss +=(p-incp)*q;
                    
         }
-       cout<<setprecision(30)<<loss<<endl;
+         //#include <iomanip>   std::setprecision
+       cout<<setprecision(30)<<loss<<endl; // std::cout, std::fixed
      }
      return 0;
 }
